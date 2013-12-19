@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Content Security Policy Indicator Extension",
+    "description": "An indicator in the address bar for Content Security Policy (CSP) usage",
+    "icons": {
+        "128": "icons/icon128.png"
+    },
+    "version": "0.1.0",
+    "permissions": [ "http://*/*", "https://*/*", "webRequest", "tabs" ],
+    "page_action": {
+        "default_title": "CSP"
+    },
+    "background": {
+        "persistent": true,
+        "scripts": [ "js/background.js" ]
+    }
+}
